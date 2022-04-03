@@ -7,8 +7,49 @@ import (
 var Amogi = []Amogus{
 	{
 		{false, true, true, true},
+		{false, true, false, false},
+		{false, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{true, true, false, false},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
 		{true, true, false, false},
 		{true, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{true, true, false, false},
+		{true, true, true, true},
+		{true, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{true, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{true, true, false, false},
+		{false, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{false, true, true, true},
 		{false, true, false, true},
 	},
 	{
@@ -21,6 +62,63 @@ var Amogi = []Amogus{
 	{
 		{false, true, true, true},
 		{true, true, false, false},
+		{true, true, true, true},
+		{true, true, false, true},
+		{false, true, false, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{false, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{true, true, true, true},
+		{false, true, false, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{true, true, true, true},
+		{true, true, false, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{true, true, false, false},
+		{true, true, true, true},
+		{false, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
+		{true, true, true, true},
+		{false, true, true, true},
+		{false, true, false, true},
+	},
+	{
+		{false, true, true, true},
+		{false, true, false, false},
+		{true, true, true, true},
 		{true, true, true, true},
 		{true, true, true, true},
 		{false, true, false, true},
@@ -29,13 +127,13 @@ var Amogi = []Amogus{
 
 var AmogiSizes []image.Point
 
-type Amogus [][]pixel
+type Amogus [][]Pixel
 
 func (amogus Amogus) Size() image.Point {
 	return image.Point{len(amogus[0]), len(amogus)}
 }
 
-type pixel bool
+type Pixel bool
 
 func init() {
 	for _, amongus := range Amogi {
