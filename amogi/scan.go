@@ -5,8 +5,6 @@ import (
 	"image"
 )
 
-const maximumErrors = 0
-
 func ScanAmogi(img image.Image) []image.Rectangle {
 	spots := make([]image.Rectangle, 0)
 	for _, size := range AmogiSizes {
@@ -63,14 +61,10 @@ func isSizeOfAmogus(size image.Point, amogus Amogus) bool {
 }
 
 func looksLikeAmogus(img image.Image, amogus Amogus) bool {
-	errors := 0
 	bodyColor := img.At(1, 0)
 	for y, line := range amogus {
 		for x, pixel := range line {
 			if (bodyColor == img.At(x, y)) != pixel {
-				errors++
-			}
-			if errors > maximumErrors {
 				return false
 			}
 		}
