@@ -1,7 +1,7 @@
 package main
 
 import (
-	"amongicounter/amogi"
+	"analysus/amogi"
 	"flag"
 	"fmt"
 	"image"

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"amongicounter/amogi"
-	"amongicounter/highlight"
+	"analysus/amogi"
+	"analysus/highlight"
 	"flag"
 	"fmt"
 	"github.com/disintegration/imaging"

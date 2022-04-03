@@ -1,4 +1,4 @@
-module amongicounter
+module analysus
 
 go 1.18
 
